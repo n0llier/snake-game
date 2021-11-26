@@ -1,0 +1,28 @@
+body {
+  background-color: #202124;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+
+.container h3 {
+  font-size: 16px;
+  color: #3c4043;
+  margin: 20px auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#game {
+  border: 1px solid #3c4043;
+}
