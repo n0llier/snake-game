@@ -11,8 +11,8 @@ h3 {
 
 .container h3 {
   font-size: 16px;
-  color: #3c4043;
-  margin: 20px auto;
+  color: white;
+  margin: 40px auto;
 }
 
 .container {
@@ -21,6 +21,10 @@ h3 {
   height: 100vh;
   justify-content: center;
   align-items: center;
+}
+
+#game-logo {
+  margin: 0 0 60px 0;
 }
 
 #game {

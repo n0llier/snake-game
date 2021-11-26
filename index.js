@@ -92,6 +92,7 @@ function drawSnake() {
   ctx.fillRect(headX * tileCount, headY * tileCount, tileSize, tileSize);
 
   ctx.fillStyle = "#3c4043";
+
   for (let i = 0; i < snakeParts.length; i++) {
     let part = snakeParts[i];
     ctx.fillRect(part.x * tileCount, part.y * tileCount, tileSize, tileSize);
