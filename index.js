@@ -108,6 +108,7 @@ function drawSnake() {
 function changeSnakePosition() {
   headX = headX + xVelocity;
   headY = headY + yVelocity;
+  hasMoved = true;
 }
 
 function drawApple() {
@@ -134,6 +135,9 @@ function checkAppleCollision() {
 document.body.addEventListener("keydown", keyDown);
 
 function keyDown(event) {
+  if (!hasMoved) {
+    return;
+  }
   // If up key pressed
   if (event.keyCode === 38) {
     if (yVelocity === 1) {
