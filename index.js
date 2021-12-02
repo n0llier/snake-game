@@ -140,39 +140,39 @@ function keyDown(event) {
   }
   // If up key pressed
   if (event.keyCode === 38) {
-    hasMoved = false;
     if (yVelocity === 1) {
       return;
     }
+    hasMoved = false;
     yVelocity = -1;
     xVelocity = 0;
   }
   // If down key pressed
   if (event.keyCode === 40) {
     if (yVelocity === -1) {
-      hasMoved = false;
       return;
     }
     yVelocity = 1;
     xVelocity = 0;
+    hasMoved = false;
   }
   // If left key pressed
   if (event.keyCode === 37) {
     if (xVelocity === 1) {
-      hasMoved = false;
       return;
     }
     yVelocity = 0;
     xVelocity = -1;
+    hasMoved = false;
   }
   // If down right pressed
   if (event.keyCode === 39) {
     if (xVelocity === -1) {
-      hasMoved = false;
       return;
     }
     yVelocity = 0;
     xVelocity = +1;
+    hasMoved = false;
   }
 }
 
