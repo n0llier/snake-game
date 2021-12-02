@@ -149,8 +149,8 @@ function keyDown(event) {
   }
   // If down key pressed
   if (event.keyCode === 40) {
-    hasMoved = false;
     if (yVelocity === -1) {
+      hasMoved = false;
       return;
     }
     yVelocity = 1;
@@ -158,8 +158,8 @@ function keyDown(event) {
   }
   // If left key pressed
   if (event.keyCode === 37) {
-    hasMoved = false;
     if (xVelocity === 1) {
+      hasMoved = false;
       return;
     }
     yVelocity = 0;
@@ -167,8 +167,8 @@ function keyDown(event) {
   }
   // If down right pressed
   if (event.keyCode === 39) {
-    hasMoved = false;
     if (xVelocity === -1) {
+      hasMoved = false;
       return;
     }
     yVelocity = 0;
