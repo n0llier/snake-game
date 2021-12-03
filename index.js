@@ -77,8 +77,9 @@ function isGameOver() {
     ctx.fillStyle = "#3c4043";
     ctx.font = "28px sans-serif";
     ctx.fillText("Game Over!", canvas.width / 3.2, canvas.height / 1.6);
-  }
 
+    document.getElementById("panel").classList.add("is-active");
+  }
   return gameOver;
 }
 
@@ -177,3 +178,11 @@ function keyDown(event) {
 }
 
 drawGame();
+
+function clickMe() {
+  console.log("click");
+  document.getElementById("panel").classList.remove("is-active");
+  drawGame();
+}
+
+document.getElementById("retry").addEventListener("click", clickMe);
