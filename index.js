@@ -177,12 +177,24 @@ function keyDown(event) {
   }
 }
 
-drawGame();
+function resetGame() {
+  headX = 10;
+  headY = 10;
 
-function clickMe() {
-  console.log("click");
+  snakeParts.splice(0, snakeParts.length);
+  tailLength = 2;
+
+  xVelocity = 0;
+  yVelocity = 0;
+
+  appleX = 5;
+  appleY = 5;
+
   document.getElementById("panel").classList.remove("is-active");
+
   drawGame();
 }
 
-document.getElementById("retry").addEventListener("click", clickMe);
+document.getElementById("retry").addEventListener("click", resetGame);
+
+drawGame();
